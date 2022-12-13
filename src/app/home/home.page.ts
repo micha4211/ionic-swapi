@@ -18,7 +18,7 @@ export class HomePage implements OnInit {
         this.planets = [
           ...this.planets,
           ...data.results.map(x => x.name)
-        ];
+        ].sort();
       },
       error: err => {
         console.log(err);
