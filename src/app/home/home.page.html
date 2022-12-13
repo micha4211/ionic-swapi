@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Star Wars Planets (0)
+      Star Wars Planets ( {{ planets.length }})
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,11 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Star Wars Plaents (0)</ion-title>
+      <ion-title size="large">Star Wars Plaents ({{ planets.length }})</ion-title>
     </ion-toolbar>
   </ion-header>
 
 <ion-list>
-  <ion-item>Foo</ion-item>
-  <ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item><ion-item>Foo</ion-item>
+  <ion-item *ngFor="let p of planets">{{ p }}</ion-item>
 </ion-list>
 </ion-content>
